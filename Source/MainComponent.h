@@ -19,9 +19,9 @@ public:
     void resized() override;
 
 private:
-    //==============================================================================
-    // Your private member variables go here...
+    juce::TextButton audioPlayerButton;
 
+    auto openMusicPlayer() -> void;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainComponent)
 };

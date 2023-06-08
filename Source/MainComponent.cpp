@@ -3,6 +3,12 @@
 //==============================================================================
 MainComponent::MainComponent()
 {
+    addAndMakeVisible(&audioPlayerButton);
+    audioPlayerButton.setButtonText("Open Music Player");
+    audioPlayerButton.onClick = [this]() { this->openMusicPlayer(); };
+
+
+
     setSize (600, 400);
 }
 
@@ -21,9 +27,10 @@ void MainComponent::paint (juce::Graphics& g)
     g.drawText ("Hello World!", getLocalBounds(), juce::Justification::centred, true);
 }
 
-void MainComponent::resized()
-{
-    // This is called when the MainComponent is resized.
-    // If you add any child components, this is where you should
-    // update their positions.
+void MainComponent::resized() {
+    audioPlayerButton.setBounds(10, 10, getWidth() - 20, 20);
+}
+
+auto MainComponent::openMusicPlayer() -> void {
+
 }
