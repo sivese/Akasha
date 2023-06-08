@@ -3,6 +3,10 @@
 <JUCERPROJECT id="btpPSU" name="Akasha" projectType="guiapp" useAppConfig="0"
               addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1">
   <MAINGROUP id="zkBYl9" name="Akasha">
+    <GROUP id="{853C27BA-EFD8-2464-BD00-023B07EEC57A}" name="Player">
+      <FILE id="obryDs" name="MusicPlayer.cc" compile="1" resource="0" file="Source/MusicPlayer.cc"/>
+      <FILE id="a7Ehzm" name="MusicPlayer.hh" compile="0" resource="0" file="Source/MusicPlayer.hh"/>
+    </GROUP>
     <GROUP id="{C6C4A9DE-7313-1D9F-9A8B-4B7114644AA3}" name="Source">
       <FILE id="Xc6jCp" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
       <FILE id="f6B9gJ" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>

@@ -20,7 +20,6 @@ public:
 
 private:
     juce::TextButton audioPlayerButton;
-
     auto openMusicPlayer() -> void;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainComponent)
