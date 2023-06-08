@@ -9,7 +9,7 @@
 */
 
 #include <JuceHeader.h>
-#include "MusicPlayer.h"
+#include "MusicPlayer.hh"
 
 //==============================================================================
 MusicPlayer::MusicPlayer()

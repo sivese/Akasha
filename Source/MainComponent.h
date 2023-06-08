@@ -1,6 +1,7 @@
 #pragma once
 
 #include <JuceHeader.h>
+#include "PlayerWindow.hh"
 
 //==============================================================================
 /*
@@ -19,6 +20,8 @@ public:
     void resized() override;
 
 private:
+    std::unique_ptr<akasha::PlayerWindow> playerWindow;
+
     juce::TextButton audioPlayerButton;
     auto openMusicPlayer() -> void;
 

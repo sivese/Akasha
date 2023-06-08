@@ -6,6 +6,8 @@
     <GROUP id="{853C27BA-EFD8-2464-BD00-023B07EEC57A}" name="Player">
       <FILE id="obryDs" name="MusicPlayer.cc" compile="1" resource="0" file="Source/MusicPlayer.cc"/>
       <FILE id="a7Ehzm" name="MusicPlayer.hh" compile="0" resource="0" file="Source/MusicPlayer.hh"/>
+      <FILE id="Uqgqnj" name="PlayerWindow.cc" compile="1" resource="0" file="Source/PlayerWindow.cc"/>
+      <FILE id="eMzxb9" name="PlayerWindow.hh" compile="0" resource="0" file="Source/PlayerWindow.hh"/>
     </GROUP>
     <GROUP id="{C6C4A9DE-7313-1D9F-9A8B-4B7114644AA3}" name="Source">
       <FILE id="Xc6jCp" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>

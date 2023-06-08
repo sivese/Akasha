@@ -1,4 +1,5 @@
 #include "MainComponent.h"
+#include "MusicPlayer.hh"
 
 //==============================================================================
 MainComponent::MainComponent()
@@ -32,5 +33,5 @@ void MainComponent::resized() {
 }
 
 auto MainComponent::openMusicPlayer() -> void {
-
+    playerWindow.reset(new akasha::PlayerWindow());
 }
