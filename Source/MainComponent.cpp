@@ -8,8 +8,6 @@ MainComponent::MainComponent()
     audioPlayerButton.setButtonText("Open Music Player");
     audioPlayerButton.onClick = [this]() { this->openMusicPlayer(); };
 
-
-
     setSize (600, 400);
 }
 
@@ -33,5 +31,5 @@ void MainComponent::resized() {
 }
 
 auto MainComponent::openMusicPlayer() -> void {
-    playerWindow.reset(new akasha::PlayerWindow());
+    playerWindow.reset(new akasha::PlayerWindow(akasha::musicPlayerName));
 }

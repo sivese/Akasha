@@ -17,7 +17,8 @@ namespace akasha {
     public:
         PlayerWindow(juce::String name);
         ~PlayerWindow() override;
+        
+        void closeButtonPressed() override;
     private:
-
     };
 }

@@ -15,20 +15,23 @@
 //==============================================================================
 /*
 */
-class MusicPlayer  : public juce::Component
-{
-public:
-    MusicPlayer();
-    ~MusicPlayer() override;
+namespace akasha {
+    const auto musicPlayerName = "Kanam Player";
 
-    void paint (juce::Graphics&) override;
-    void resized() override;
+    class MusicPlayer  : public juce::Component {
+    public:
+        MusicPlayer();
+        ~MusicPlayer() override;
 
-private:
-    juce::ImageButton playButton;
-    juce::ImageButton pauseButton;
-    juce::ImageButton nextButton;
-    juce::ImageButton prevButton;
+        void paint (juce::Graphics&) override;
+        void resized() override;
 
-    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MusicPlayer)
-};
+    private:
+        juce::ImageButton playButton;
+        juce::ImageButton pauseButton;
+        juce::ImageButton nextButton;
+        juce::ImageButton prevButton;
+
+        JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MusicPlayer)
+    };
+}

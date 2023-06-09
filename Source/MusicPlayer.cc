@@ -11,6 +11,8 @@
 #include <JuceHeader.h>
 #include "MusicPlayer.hh"
 
+using namespace akasha;
+
 //==============================================================================
 MusicPlayer::MusicPlayer()
 {
