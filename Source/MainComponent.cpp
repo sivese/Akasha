@@ -8,6 +8,10 @@ MainComponent::MainComponent()
     audioPlayerButton.setButtonText("Open Music Player");
     audioPlayerButton.onClick = [this]() { this->openMusicPlayer(); };
 
+    addAndMakeVisible(&graphicWindowButton);
+    graphicWindowButton.setButtonText("Open openGL Demo");
+    graphicWindowButton.onClick = [this]() { this->openGraphicWindow(); };
+
     setSize (600, 400);
 }
 
@@ -32,4 +36,8 @@ void MainComponent::resized() {
 
 auto MainComponent::openMusicPlayer() -> void {
     playerWindow.reset(new akasha::PlayerWindow(akasha::musicPlayerName));
+}
+
+auto MainComponent::openGraphicWindow() -> void {
+    graphicWindow.reset(new akasha::GraphicWindow())
 }
