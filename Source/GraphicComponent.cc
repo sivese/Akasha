@@ -24,7 +24,7 @@ GraphicComponent::~GraphicComponent()
 {
 }
 
-void newOpenGLContextCreated()
+void GraphicComponent::newOpenGLContextCreated()
 {
 
 }

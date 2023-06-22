@@ -36,8 +36,10 @@ void MainComponent::resized() {
 
 auto MainComponent::openMusicPlayer() -> void {
     playerWindow.reset(new akasha::PlayerWindow(akasha::musicPlayerName));
+    playerWindow->setBounds(200, 200, 300, 300);
+    playerWindow->setVisible(true);
 }
 
 auto MainComponent::openGraphicWindow() -> void {
-    graphicWindow.reset(new akasha::GraphicWindow())
+    //graphicWindow.reset(new akasha::GraphicWindow())
 }

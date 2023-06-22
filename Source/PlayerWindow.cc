@@ -36,5 +36,5 @@ PlayerWindow::PlayerWindow(juce::String name) : DocumentWindow(
 PlayerWindow::~PlayerWindow() { }
 
 void PlayerWindow::closeButtonPressed() {
-
+    delete this;
 }
